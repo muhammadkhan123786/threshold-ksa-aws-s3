@@ -4,6 +4,7 @@ pgdata
 # compiled output
 /dist
 /node_modules
+/.history
 
 # Logs
 logs
