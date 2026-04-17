@@ -15,7 +15,7 @@ export const fetchPlayersTable = async ({
     search = '',
 }: PlayersTableRequest): Promise<any> => {
     const response = await api
-        .url(`players?sportId=${sportId}&page=${page}&limit=${limit}&search=${search}`)
+        .url(`/players?sportId=${sportId}&page=${page}&limit=${limit}&search=${search}`)
         .get()
         .json<any>();
 

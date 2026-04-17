@@ -21,7 +21,7 @@ export const updateAdminManager = async (
     payload: UpdateAdminManagerPayload,
 ): Promise<UpdateAdminManagerResponse> => {
     const response = await api
-        .url(`admin-manager/${id}`)
+        .url(`/admin-manager/${id}`)
         .put(payload)
         .json<UpdateAdminManagerResponse>();
     return response;

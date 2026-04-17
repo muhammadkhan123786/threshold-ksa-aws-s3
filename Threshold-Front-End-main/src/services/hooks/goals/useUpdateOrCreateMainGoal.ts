@@ -32,7 +32,7 @@ const updateYearGoal = async (
 ): Promise<AddYearGoalResponse> => {
     try {
         const response = await api
-            .url(`sportClubProfile/${sportClubProfileId}/teams/${teamId}/main-goal`)
+            .url(`/sportClubProfile/${sportClubProfileId}/teams/${teamId}/main-goal`)
             .patch(data)
             .json<AddYearGoalResponse>();
         return response;

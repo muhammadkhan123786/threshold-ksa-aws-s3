@@ -61,7 +61,7 @@ export const addManagers = async (
     formData.append('contractRenewalTerms', data.contractRenewalTerms);
 
     const response = await api
-        .url(`club/${clubId}/manager`)
+        .url(`/club/${clubId}/manager`)
         .post(formData)
         .json<AddManagersResponse>();
     return response;

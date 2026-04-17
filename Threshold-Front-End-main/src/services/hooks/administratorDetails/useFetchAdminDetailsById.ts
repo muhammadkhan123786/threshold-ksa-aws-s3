@@ -67,7 +67,7 @@ interface CoachDetailsResponse {
 
 const fetchAdminDetailsById = async (sportId: string, coachId: string): Promise<CoachDetails> => {
     const response = await api
-        .url(`sportClubProfile/${sportId}/club-admin/${coachId}/details`)
+        .url(`/sportClubProfile/${sportId}/club-admin/${coachId}/details`)
         .get()
         .json<CoachDetailsResponse>();
     const coachDetails = response.data;

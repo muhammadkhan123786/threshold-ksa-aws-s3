@@ -60,7 +60,7 @@ interface AthleteDetailsResponse {
 
 const fetchAthleteDetailsById = async (athleteId: string): Promise<AthleteDetails> => {
     const response = await api
-        .url(`athletes/${athleteId}/details`)
+        .url(`/athletes/${athleteId}/details`)
         .get()
         .json<AthleteDetailsResponse>();
     return response.payload;

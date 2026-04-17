@@ -28,7 +28,7 @@ const postFeedbackClub = async (feedbackData: FeedbackData): Promise<FeedbackRes
         formData.append('avatar', feedbackData.avatar);
     }
 
-    const response = await api.url('feedbacks/club').post(formData).json<FeedbackResponse>();
+    const response = await api.url('/feedbacks/club').post(formData).json<FeedbackResponse>();
     return response;
 };
 

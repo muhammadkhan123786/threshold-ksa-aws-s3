@@ -19,7 +19,7 @@ interface ClubSportListResponse {
 
 const fetchClubList = async (academyId?: string): Promise<ClubSportListResponse> => {
     const response = await api
-        .url(`sport-club-profiles/${academyId}`)
+        .url(`/sport-club-profiles/${academyId}`)
         .get()
         .json<ClubSportListResponse>();
     return response;

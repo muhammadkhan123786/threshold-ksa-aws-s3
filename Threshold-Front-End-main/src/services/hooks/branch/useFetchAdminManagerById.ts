@@ -12,7 +12,7 @@ export const fetchAdminManagerById = async (
     adminManagerId: string,
 ): Promise<AdminManagerResponse> => {
     const response = await api
-        .url(`users/admin-managers/${adminManagerId}`)
+        .url(`/users/admin-managers/${adminManagerId}`)
         .get()
         .json<AdminManagerResponse>();
     return response;

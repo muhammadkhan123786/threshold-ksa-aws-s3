@@ -3,7 +3,7 @@ import api from '../../clients/wretchClient';
 
 const fetchDocumentsById = async (sportId: string, coachId: string): Promise<any> => {
     const response = await api
-        .url(`sportClubProfile/${sportId}/club-admin/${coachId}/document`)
+        .url(`/sportClubProfile/${sportId}/club-admin/${coachId}/document`)
         .get()
         .json<any>();
     return response.data;

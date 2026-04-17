@@ -15,7 +15,7 @@ interface SubscriptionAnalyticsResponse {
 
 const getSubscriptionAnalytics = async (): Promise<SubscriptionAnalyticsResponse> => {
     const response = await api
-        .url(`athletes/subscriptions/analytics`)
+        .url(`/athletes/subscriptions/analytics`)
         .get()
         .json<SubscriptionAnalyticsResponse>();
 

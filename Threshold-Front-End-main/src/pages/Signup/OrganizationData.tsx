@@ -57,10 +57,10 @@ const OrganizationData = () => {
             />
             <Theme.InputController
                 type="text"
-                autoComplete="contactNumber"
+                autoComplete="phone"
                 {...{
                     control,
-                    name: 'contactNumber',
+                    name: 'phone',
                     label: trans('signup.contactNumber'),
                     placeholder: trans('signup.contactNumberPlaceholder'),
                 }}

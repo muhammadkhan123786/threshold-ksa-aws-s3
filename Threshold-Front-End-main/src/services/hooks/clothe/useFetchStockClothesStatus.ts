@@ -14,7 +14,7 @@ export const fetchStockClothesStatus = async (
 ): Promise<ClothesTableRequest> => {
     if (!sportId) throw new Error('Sport ID is required');
     const response = await api
-        .url(`stock/clothing-status?page=${page}&limit=${limit}&sportId=${sportId}`)
+        .url(`/stock/clothing-status?page=${page}&limit=${limit}&sportId=${sportId}`)
         .get()
         .json<any>();
     return response;

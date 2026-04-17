@@ -52,7 +52,7 @@ export const addAdministrators = async (
     if (data.branch) formData.append('branch', data.branch);
 
     const response = await api
-        .url(`sportClubProfile/${sportId}/club-admin`)
+        .url(`/sportClubProfile/${sportId}/club-admin`)
         .post(formData)
         .json<AddAdministratorsResponse>();
 

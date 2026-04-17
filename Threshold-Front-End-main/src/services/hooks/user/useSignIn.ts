@@ -17,7 +17,7 @@ interface SignInRequest {
 
 const signIn = async (request: SignInRequest): Promise<SignInResponse> => {
     const response = await api
-        .url('auth/login')
+        .url('/auth/login')
         .post({ email: request.email, password: request.password })
         .json<SignInResponse>();
     return response;

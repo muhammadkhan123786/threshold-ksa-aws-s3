@@ -17,7 +17,7 @@ interface ClubInfoResponse {
 }
 
 const fetchClubInfo = async (clubId: string): Promise<ClubInfoResponse> => {
-    const response = await api.url(`club/${clubId}`).get().json<ClubInfoResponse>();
+    const response = await api.url(`/club/${clubId}`).get().json<ClubInfoResponse>();
     return response;
 };
 

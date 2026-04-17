@@ -16,14 +16,14 @@ const createClothingData = async (
     id: string | undefined,
     data: ClothingDataRequest,
 ): Promise<ClothingDataResponse> => {
-    return api.url(`athletes/${id}/clothing-data`).post(data).json<ClothingDataResponse>();
+    return api.url(`/athletes/${id}/clothing-data`).post(data).json<ClothingDataResponse>();
 };
 
 const updateClothingData = async (
     id: string | undefined,
     data: ClothingDataRequest,
 ): Promise<ClothingDataResponse> => {
-    return api.url(`athletes/${id}/clothing-data`).patch(data).json<ClothingDataResponse>();
+    return api.url(`/athletes/${id}/clothing-data`).patch(data).json<ClothingDataResponse>();
 };
 
 export const useCreateClothingData = (

@@ -24,7 +24,7 @@ const updatePersonalInfo = async (
     id: string | undefined,
     data: PersonalInfoRequest,
 ): Promise<PersonalInfoResponse> => {
-    return api.url(`athletes/${id}/personal-info`).patch(data).json<PersonalInfoResponse>();
+    return api.url(`/athletes/${id}/personal-info`).patch(data).json<PersonalInfoResponse>();
 };
 
 export const useUpdatePersonalInfo = (

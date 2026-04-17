@@ -14,7 +14,7 @@ const getTodayAthletes = async (academyId: string): Promise<GetTodayAthletesResp
     }
 
     const response = await api
-        .url(`athletes/today?academyId=${academyId}`)
+        .url(`/athletes/today?academyId=${academyId}`)
         .get()
         .json<GetTodayAthletesResponse>();
     return response;

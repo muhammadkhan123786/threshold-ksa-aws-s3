@@ -11,7 +11,7 @@ const updateMedicalInfo = async (
     data: FormData, // We're using FormData to handle file uploads
 ): Promise<MedicalInfoResponse> => {
     return api
-        .url(`athletes/${id}/health/medical-info`)
+        .url(`/athletes/${id}/health/medical-info`)
 
         .patch(data)
         .json<MedicalInfoResponse>();

@@ -9,7 +9,7 @@ interface AdminManagersResponse {
 }
 
 export const fetchAdminManagers = async (): Promise<AdminManagersResponse> => {
-    const response = await api.url('admin-managers').get().json<AdminManagersResponse>();
+    const response = await api.url('/admin-managers').get().json<AdminManagersResponse>();
     return response;
 };
 

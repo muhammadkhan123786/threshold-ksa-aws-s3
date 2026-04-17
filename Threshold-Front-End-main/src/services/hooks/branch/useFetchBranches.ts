@@ -9,7 +9,7 @@ interface BranchesResponse {
 }
 
 const fetchBranches = async (): Promise<BranchesResponse> => {
-    const response = await api.url('branches').get().json<BranchesResponse>();
+    const response = await api.url('/branches').get().json<BranchesResponse>();
     return response;
 };
 

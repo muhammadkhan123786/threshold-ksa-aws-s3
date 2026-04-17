@@ -20,7 +20,7 @@ interface AddStockClothesResponse {
 export const addStockClothes = async (
     data: AddStockClothesRequest,
 ): Promise<AddStockClothesResponse> => {
-    const response = await api.url(`stock`).post(data).json<AddStockClothesResponse>();
+    const response = await api.url(`/stock`).post(data).json<AddStockClothesResponse>();
     return response;
 };
 

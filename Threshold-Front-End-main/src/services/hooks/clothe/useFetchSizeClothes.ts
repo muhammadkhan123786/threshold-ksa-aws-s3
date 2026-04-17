@@ -2,7 +2,7 @@ import { useQuery, UseQueryOptions, UseQueryResult } from '@tanstack/react-query
 import api from '../../clients/wretchClient';
 
 export const fetchSizeClothes = async (sportId: string): Promise<any> => {
-    const response = await api.url(`stock/categories?sportId=${sportId}`).get().json<any>();
+    const response = await api.url(`/stock/categories?sportId=${sportId}`).get().json<any>();
     return response.data;
 };
 

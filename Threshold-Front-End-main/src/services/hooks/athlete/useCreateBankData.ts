@@ -16,14 +16,14 @@ const createBankData = async (
     id: string | undefined,
     data: BankDataRequest,
 ): Promise<BankDataResponse> => {
-    return api.url(`athletes/${id}/bank-data`).post(data).json<BankDataResponse>();
+    return api.url(`/athletes/${id}/bank-data`).post(data).json<BankDataResponse>();
 };
 
 const updateBankData = async (
     id: string | undefined,
     data: BankDataRequest,
 ): Promise<BankDataResponse> => {
-    return api.url(`athletes/${id}/bank-data`).patch(data).json<BankDataResponse>();
+    return api.url(`/athletes/${id}/bank-data`).patch(data).json<BankDataResponse>();
 };
 
 export const useCreateBankData = (

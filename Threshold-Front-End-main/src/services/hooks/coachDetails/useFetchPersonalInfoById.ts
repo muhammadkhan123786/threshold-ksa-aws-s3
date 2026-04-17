@@ -3,7 +3,7 @@ import api from '../../clients/wretchClient';
 
 const fetchPersonalInfoById = async (sportId: string, coachId: string): Promise<any> => {
     const response = await api
-        .url(`sportClubProfile/${sportId}/club-coaches/${coachId}/personal-information`)
+        .url(`/sportClubProfile/${sportId}/club-coaches/${coachId}/personal-information`)
         .get()
         .json<any>();
     return response.data;

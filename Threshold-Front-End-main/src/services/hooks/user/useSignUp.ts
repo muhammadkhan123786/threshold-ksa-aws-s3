@@ -10,14 +10,16 @@ interface SignUpResponse {
 }
 
 export interface SignUpRequest {
-    academyName: string;
+    name: string;
     registrationNumber: string;
-    contactNumber: string;
-    adminName: string;
+    phone: string;
+    phoneNumbers?: string[];
+    username: string;
     email: string;
     avatar?: File;
     password: string;
     organizationType: 'academy' | 'club';
+    address?: string;
 }
 
 const signUp = async (request: SignUpRequest): Promise<SignUpResponse> => {
@@ -37,7 +39,7 @@ const signUp = async (request: SignUpRequest): Promise<SignUpResponse> => {
         }
     });
 
-    const response = await api.url('auth/company-register').post(formData).json<SignUpResponse>();
+    const response = await api.url('/auth/company-register').post(formData).json<SignUpResponse>();
     return response;
 };
 

@@ -15,7 +15,7 @@ const subscribeToTopic = async (
     request: SubscribeToTopicRequest,
 ): Promise<SubscribeToTopicResponse> => {
     const response = await api
-        .url('notifications/subscribe')
+        .url('/notifications/subscribe')
         .post(request)
         .json<SubscribeToTopicResponse>();
     return response;

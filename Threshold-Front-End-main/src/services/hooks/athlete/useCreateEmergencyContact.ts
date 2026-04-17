@@ -17,14 +17,14 @@ const createEmergencyContact = async (
     id: string | undefined,
     data: EmergencyContactRequest,
 ): Promise<EmergencyContactResponse> => {
-    return api.url(`athletes/${id}/emergency-contact`).post(data).json<EmergencyContactResponse>();
+    return api.url(`/athletes/${id}/emergency-contact`).post(data).json<EmergencyContactResponse>();
 };
 
 const updateEmergencyContact = async (
     id: string | undefined,
     data: EmergencyContactRequest,
 ): Promise<EmergencyContactResponse> => {
-    return api.url(`athletes/${id}/emergency-contact`).patch(data).json<EmergencyContactResponse>();
+    return api.url(`/athletes/${id}/emergency-contact`).patch(data).json<EmergencyContactResponse>();
 };
 
 export const useCreateEmergencyContact = (

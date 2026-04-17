@@ -62,7 +62,7 @@ const getWeeklySessions = async (
     }).toString();
 
     const response = await api
-        .url(`weekly-sessions?${query}`)
+        .url(`/weekly-sessions?${query}`)
         .get()
         .json<GetWeeklySessionsResponse>();
 

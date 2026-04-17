@@ -32,10 +32,8 @@ export const useRegisterSchema = () => {
                         trans('signup.validation.register.academyContactNumberInvalid'),
                     ),
             )
-            .min(1, trans('signup.validation.register.atLeastOneContactNumberRequired'))
-            .default([])
             .notRequired(),
-        contactNumber: yup
+        phone: yup
             .string()
             .required(trans('signup.validation.register.academyContactNumberRequired'))
             .matches(/^(05)\d{8}$/, trans('signup.validation.register.academyContactNumberInvalid'))

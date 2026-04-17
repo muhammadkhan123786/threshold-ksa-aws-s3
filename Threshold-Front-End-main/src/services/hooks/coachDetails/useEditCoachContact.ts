@@ -21,7 +21,7 @@ const updateCoachContact = async (
     data: EditCoachContactRequest,
 ): Promise<EditCoachContact> => {
     const response = await api
-        .url(`sportClubProfile/${sportId}/club-coaches/${coachId}/contact`)
+        .url(`/sportClubProfile/${sportId}/club-coaches/${coachId}/contact`)
         .patch(data)
         .json<EditCoachContact>();
     return response;

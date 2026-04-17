@@ -42,7 +42,7 @@ export const addCoachDocument = async (
         }
     });
     const response = await api
-        .url(`sportClubProfile/${sportId}/club-admin/${coachId}/document`)
+        .url(`/sportClubProfile/${sportId}/club-admin/${coachId}/document`)
         .post(formData)
         .json<AddCoachDocument>();
     return response;

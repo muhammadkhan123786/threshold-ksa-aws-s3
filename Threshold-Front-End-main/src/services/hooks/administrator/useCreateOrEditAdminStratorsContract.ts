@@ -42,7 +42,7 @@ const createAdminStratorsContract = async (
     const formData = createFormData(data);
 
     return api
-        .url(`sportClubProfile/${sportClubProfileId}/club-admin/${adminId}/contract`)
+        .url(`/sportClubProfile/${sportClubProfileId}/club-admin/${adminId}/contract`)
         .post(formData)
         .json<EditAdminStratorsContact>();
 };
@@ -55,7 +55,7 @@ const editAdminStratorsContract = async (
     const formData = createFormData(data);
 
     return api
-        .url(`sportClubProfile/${sportClubProfileId}/club-admin/${adminId}/contract`)
+        .url(`/sportClubProfile/${sportClubProfileId}/club-admin/${adminId}/contract`)
         .patch(formData)
         .json<EditAdminStratorsContact>();
 };

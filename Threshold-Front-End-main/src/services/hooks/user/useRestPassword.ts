@@ -12,7 +12,7 @@ interface ResetPasswordResponse {
 
 const resetPassword = async (request: ResetPasswordRequest): Promise<ResetPasswordResponse> => {
     const response = await api
-        .url('auth/reset_password')
+        .url('/auth/reset_password')
         .post(request)
         .json<ResetPasswordResponse>();
     return response;

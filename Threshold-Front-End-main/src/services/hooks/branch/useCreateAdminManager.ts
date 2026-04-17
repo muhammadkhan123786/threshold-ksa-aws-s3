@@ -27,7 +27,7 @@ export const createAdminManager = async (
     payload: CreateAdminManagerPayload,
 ): Promise<CreateAdminManagerResponse> => {
     const response = await api
-        .url('users/admin-manager')
+        .url('/users/admin-manager')
         .post(payload)
         .json<CreateAdminManagerResponse>();
     return response;

@@ -13,7 +13,7 @@ export const fetchCoachesTable = async ({
     limit = 10,
 }: CoachTableRequest): Promise<any> => {
     const response = await api
-        .url(`sportClubProfile/${sportId}/club-coaches?page=${page}&limit=${limit}&sortOrder=ASC`)
+        .url(`/sportClubProfile/${sportId}/club-coaches?page=${page}&limit=${limit}&sortOrder=ASC`)
         .get()
         .json<any>();
     return response;

@@ -43,14 +43,14 @@ interface SportProfileResponse {
 
 // Define API request functions
 const createSportProfile = async (data: SportProfileRequest): Promise<SportProfileResponse> => {
-    return api.url('athleteProfiles').post(data).json<SportProfileResponse>();
+    return api.url('/athleteProfiles').post(data).json<SportProfileResponse>();
 };
 
 const updateSportProfile = async (
     id: string,
     data: SportProfileRequest,
 ): Promise<SportProfileResponse> => {
-    return api.url(`athleteProfiles/${id}`).patch(data).json<SportProfileResponse>();
+    return api.url(`/athleteProfiles/${id}`).patch(data).json<SportProfileResponse>();
 };
 
 // Define hooks using React Query

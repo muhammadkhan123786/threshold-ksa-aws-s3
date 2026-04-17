@@ -21,7 +21,7 @@ export const updateStockClothes = async ({
     id,
     data,
 }: PatchStockSizeRequest): Promise<interfaceUpdateStockClothes> => {
-    const response = await api.url(`stock/${id}`).patch(data).json<interfaceUpdateStockClothes>();
+    const response = await api.url(`/stock/${id}`).patch(data).json<interfaceUpdateStockClothes>();
     return response;
 };
 
