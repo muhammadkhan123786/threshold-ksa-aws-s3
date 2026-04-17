@@ -249,7 +249,7 @@ export class AuthService {
                 );
             } catch (emailError) {
                 this.logger.error(
-                    `Failed to send registration email: ${emailError.message}`
+                    `Failed to send registration email: ${emailError}`
                 );
                 // Continue even if email fails
             }
@@ -262,8 +262,8 @@ export class AuthService {
                 }
             );
         } catch (error) {
-            this.logger.error(`Registration failed: ${error.message}`);
-            this.logger.error(error.stack);
+            this.logger.error(`Registration failed: ${error}`);
+            this.logger.error(error);
             return this.handleErrorWithTranslation(error);
         }
     }
@@ -302,7 +302,7 @@ export class AuthService {
                     this.logger.log("Avatar uploaded successfully");
                 } catch (error) {
                     this.logger.error(
-                        `Failed to upload avatar: ${error.message}`
+                        `Failed to upload avatar: ${error}`
                     );
                     // Continue without avatar if upload fails
                 }
@@ -310,7 +310,7 @@ export class AuthService {
 
             this.logger.log("Creating academy...");
             const newAcademy = await this.academiesService.createAcademy({
-                contactNumber: createAcademyAdminDto.contactNumber,
+                contactNumber: createAcademyAdminDto.phone,
                 registrationNumber: createAcademyAdminDto.registrationNumber,
                 name: createAcademyAdminDto.name,
                 address: createAcademyAdminDto.address,
