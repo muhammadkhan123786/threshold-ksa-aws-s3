@@ -19,7 +19,7 @@ const addAthleteHealthRecord = async (
     id: string | undefined,
     data: AthleteHealthRecordData,
 ): Promise<AthleteHealthRecordResponse> => {
-    return api.url(`athletes/${id}/health/records`).post(data).json<AthleteHealthRecordResponse>();
+    return api.url(`/athletes/${id}/health/records`).post(data).json<AthleteHealthRecordResponse>();
 };
 
 // Function for PATCH request
@@ -29,7 +29,7 @@ const updateAthleteHealthRecord = async (
     data: AthleteHealthRecordData,
 ): Promise<AthleteHealthRecordResponse> => {
     return api
-        .url(`athletes/${id}/health/records/${recordid}`)
+        .url(`/athletes/${id}/health/records/${recordid}`)
         .patch(data)
         .json<AthleteHealthRecordResponse>();
 };

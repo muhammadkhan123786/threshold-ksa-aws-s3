@@ -11,7 +11,7 @@ interface ApiRequest {
 
 const forgetPassword = async (request: ApiRequest): Promise<ForgetPasswordResponse> => {
     const response = await api
-        .url('auth/forget_password')
+        .url('/auth/forget_password')
         .post({ email: request.email })
         .json<ForgetPasswordResponse>();
     return response;

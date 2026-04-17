@@ -41,7 +41,7 @@ const addCoachMedicalRecord = async (
     id: string | undefined,
     data: CoachMedicalRecordData,
 ): Promise<CoachMedicalRecordResponse> => {
-    return api.url(`athletes/${id}/health/records`).post(data).json<CoachMedicalRecordResponse>();
+    return api.url(`/athletes/${id}/health/records`).post(data).json<CoachMedicalRecordResponse>();
 };
 
 // Function for PATCH request
@@ -51,7 +51,7 @@ const updateCoachMedicalRecord = async (
     data: CoachMedicalRecordData,
 ): Promise<CoachMedicalRecordResponse> => {
     return api
-        .url(`athletes/${id}/health/records/${recordid}`)
+        .url(`/athletes/${id}/health/records/${recordid}`)
         .patch(data)
         .json<CoachMedicalRecordResponse>();
 };
@@ -81,7 +81,7 @@ export const useAddCoachMedicalRecord = (
 
 const fetchMedicalRecordsById = async (athleteId: string): Promise<MedicalRecordsResponse> => {
     const response = await api
-        .url(`athletes/${athleteId}/health/records`)
+        .url(`/athletes/${athleteId}/health/records`)
         .get()
         .json<MedicalRecordsResponse>();
     return response;

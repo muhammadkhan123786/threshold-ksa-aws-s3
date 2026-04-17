@@ -2,7 +2,7 @@ import { UseMutationOptions, UseMutationResult, useMutation } from '@tanstack/re
 import api from '../../clients/wretchClient';
 
 const markAllAsSeen = async (topic: string): Promise<void> => {
-    await api.url('notifications/mark-all-as-seen').post({ topic }).res();
+    await api.url('/notifications/mark-all-as-seen').post({ topic }).res();
 };
 
 export const useMarkAllAsSeen = (

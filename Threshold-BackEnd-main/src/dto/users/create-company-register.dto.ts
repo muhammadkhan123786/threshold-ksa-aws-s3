@@ -50,14 +50,6 @@ export class UnifiedDto {
     })
     password: string;
 
-    @ApiProperty({
-        description:
-            "A valid Saudi contact number starting with '05' followed by 8 digits.",
-        example: "0551234567",
-        nullable: true,
-    })
-    contactNumber?: string;
-
     @Matches(/^\d{10}$/, {
         message: "The registration number must be exactly 10 digits.",
     })
@@ -110,11 +102,14 @@ export class UnifiedDto {
     })
     phoneNumbers?: string[];
 
+    @IsString()
+    @Matches(/^(05)\d{8}$/, {
+        message: "Phone number must start with '05' followed by 8 digits.",
+    })
     @ApiProperty({
-        description: "Phone number of the company.",
+        description: "Phone number of the company. Must start with '05' followed by 8 digits.",
         example: "0512345678",
         required: true,
     })
-    @IsString()
     phone: string;
 }

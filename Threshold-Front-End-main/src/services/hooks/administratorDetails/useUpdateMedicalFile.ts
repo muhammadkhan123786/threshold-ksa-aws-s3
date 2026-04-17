@@ -15,7 +15,7 @@ const updateMedicalInfo = async (
     data: FormData,
 ): Promise<MedicalFileResponse> => {
     return api
-        .url(`athletes/${id}/health/medical-info`)
+        .url(`/athletes/${id}/health/medical-info`)
 
         .patch(data)
         .json<MedicalFileResponse>();
@@ -25,7 +25,7 @@ const createMedicalFile = async (
     id: string | undefined,
     data: FormData,
 ): Promise<MedicalFileResponse> => {
-    return api.url(`coaches/${id}/bank-data`).post(data).json<MedicalFileResponse>();
+    return api.url(`/coaches/${id}/bank-data`).post(data).json<MedicalFileResponse>();
 };
 
 export const useCreateMedicalFile = (

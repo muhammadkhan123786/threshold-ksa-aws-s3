@@ -24,7 +24,7 @@ const uploadDocument = async (
     formData.append('file', file);
 
     return api
-        .url(`athletes/${id}/documents/upload/${type}`)
+        .url(`/athletes/${id}/documents/upload/${type}`)
         .post(formData)
         .json<DocumentUploadResponse>();
 };
@@ -69,7 +69,7 @@ const updateDocument = async (
     formData.append('type', type); // Add type to the form data
 
     return api
-        .url(`athletes/${id}/documents/${documentId}`)
+        .url(`/athletes/${id}/documents/${documentId}`)
         .patch(formData)
         .json<DocumentUploadResponse>();
 };
@@ -102,7 +102,7 @@ const deleteDocument = async (
         throw new Error('ID and Document ID are required');
     }
     return api
-        .url(`athletes/${id}/documents/${documentId}`)
+        .url(`/athletes/${id}/documents/${documentId}`)
         .delete()
         .json<DocumentUploadResponse>();
 };

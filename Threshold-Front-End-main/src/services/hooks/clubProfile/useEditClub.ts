@@ -40,7 +40,7 @@ const editClub = async (data: EditClubPayload): Promise<EditClubResponse> => {
         }
     });
 
-    return await api.url(`club/${clubId}`).patch(formData).json<EditClubResponse>();
+    return await api.url(`/club/${clubId}`).patch(formData).json<EditClubResponse>();
 };
 
 export const useEditClub = (

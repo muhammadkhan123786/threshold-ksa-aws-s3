@@ -11,7 +11,7 @@ export const fetchContractDetails = async ({
     adminId,
 }: ContractDetailsRequest): Promise<any> => {
     const response = await api
-        .url(`sportClubProfile/${sportClubProfileId}/club-admin/${adminId}/contract`)
+        .url(`/sportClubProfile/${sportClubProfileId}/club-admin/${adminId}/contract`)
         .get()
         .json<any>();
     return response;

@@ -21,7 +21,7 @@ interface NotificationsResponse {
 
 const fetchNotifications = async (topic: string): Promise<NotificationsResponse> => {
     const response = await api
-        .url('notifications/all')
+        .url('/notifications/all')
         .query({ topic })
         .get()
         .json<NotificationsResponse>();

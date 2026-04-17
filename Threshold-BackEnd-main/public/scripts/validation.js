@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-const domain = "http://localhost:8000";
+const domain = "http://localhost:8000/";
 const { token } = getQueryParams();
 var tokenData = {};
 

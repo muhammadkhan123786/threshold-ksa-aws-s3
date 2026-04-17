@@ -3,7 +3,7 @@ import api from '../../clients/wretchClient';
 
 export const fetchFieldsStockClothes = async (athleteId: string): Promise<any> => {
     if (!athleteId) throw new Error('Athlete ID is required');
-    const response = await api.url(`stock/fields?athleteId=${athleteId}`).get().json<any>();
+    const response = await api.url(`/stock/fields?athleteId=${athleteId}`).get().json<any>();
     return response;
 };
 

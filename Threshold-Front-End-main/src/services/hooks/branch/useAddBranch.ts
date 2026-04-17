@@ -13,7 +13,7 @@ interface AddBranchResponse {
 }
 
 const addBranch = async (request: AddBranchRequest): Promise<AddBranchResponse> => {
-    const response = await api.url('branches/create').post(request).json<AddBranchResponse>();
+    const response = await api.url('/branches/create').post(request).json<AddBranchResponse>();
     return response;
 };
 

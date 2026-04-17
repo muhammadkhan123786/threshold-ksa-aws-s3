@@ -14,7 +14,7 @@ interface AthletesSessions {
 
 const fetchAthelteSessionsyId = async (branchId: string): Promise<AthletesSessions> => {
     const response = await api
-        .url(`sessions/athletes/${branchId}/summary`)
+        .url(`/sessions/athletes/${branchId}/summary`)
         .get()
         .json<AthletesSessions>();
     return response;

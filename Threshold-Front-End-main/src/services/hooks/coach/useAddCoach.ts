@@ -44,7 +44,7 @@ export const addCoach = async (sportId: string, request: AddCoachRequest): Promi
     });
 
     const response = await api
-        .url(`sportClubProfile/${sportId}/club-coaches`)
+        .url(`/sportClubProfile/${sportId}/club-coaches`)
         .post(formData)
         .json<AddCoach>();
 

@@ -2,7 +2,7 @@ import { useMutation, UseMutationOptions, UseMutationResult } from '@tanstack/re
 import api from '../../clients/wretchClient';
 
 const deleteStockClothes = async (id: string): Promise<void> => {
-    await api.url(`delete/${id}`).delete().res();
+    await api.url(`/delete/${id}`).delete().res();
 };
 
 export const useDeleteStockClothes = (

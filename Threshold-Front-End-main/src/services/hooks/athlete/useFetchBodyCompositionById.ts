@@ -15,7 +15,7 @@ const fetchBodyCompositionById = async (
     endDate?: string, // ISO 8601 date string
 ): Promise<BodyCompositionResponse> => {
     const response = await api
-        .url(`athleteBiometrics/${athleteId}/body-composition`)
+        .url(`/athleteBiometrics/${athleteId}/body-composition`)
         .query({
             startDate,
             endDate,

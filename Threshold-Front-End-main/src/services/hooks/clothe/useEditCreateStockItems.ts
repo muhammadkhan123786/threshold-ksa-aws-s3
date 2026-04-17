@@ -21,7 +21,7 @@ export const editCreateStockItems = async (
     data: AddStockClothesRequest,
 ): Promise<AddStockClothesResponse> => {
     const response = await api
-        .url('stock/update-or-create')
+        .url('/stock/update-or-create')
         .post(data)
         .json<AddStockClothesResponse>();
     return response;

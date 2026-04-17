@@ -13,7 +13,7 @@ export const fetchStockClothes = async ({
     limit,
 }: FetchStockClothesParams): Promise<any> => {
     const response = await api
-        .url(`stock?sportId=${sportId}&page=${page}&limit=${limit}`)
+        .url(`/stock?sportId=${sportId}&page=${page}&limit=${limit}`)
         .get()
         .json<any>();
 

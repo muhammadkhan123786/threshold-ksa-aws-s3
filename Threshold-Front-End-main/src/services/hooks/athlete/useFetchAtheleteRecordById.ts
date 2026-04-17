@@ -18,7 +18,7 @@ interface AthletesRecords {
 }
 
 const fetchAthelteRecordhById = async (branchId: string): Promise<AthletesRecords> => {
-    const response = await api.url(`athletes/${branchId}/records`).get().json<AthletesRecords>();
+    const response = await api.url(`/athletes/${branchId}/records`).get().json<AthletesRecords>();
     return response;
 };
 

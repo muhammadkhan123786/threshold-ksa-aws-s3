@@ -15,7 +15,7 @@ const addSubGoal = async (
 ): Promise<SubGoalResponse> => {
     try {
         const response = await api
-            .url(`sportClubProfile/${sportClubProfileId}/teams/${teamId}/sub-goals`)
+            .url(`/sportClubProfile/${sportClubProfileId}/teams/${teamId}/sub-goals`)
             .post(data)
             .json<SubGoalResponse>();
         return response;
@@ -32,7 +32,7 @@ const updateSubGoal = async (
 ): Promise<SubGoalResponse> => {
     try {
         const response = await api
-            .url(`sportClubProfile/${sportClubProfileId}/teams/sub-goals/${subGoalId}`)
+            .url(`/sportClubProfile/${sportClubProfileId}/teams/sub-goals/${subGoalId}`)
             .patch(data)
             .json<SubGoalResponse>();
         return response;

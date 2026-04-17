@@ -29,7 +29,7 @@ interface SessionRecordsResponse {
 
 const fetchSessionRecordsById = async (athleteId: string): Promise<SessionRecordsResponse> => {
     const response = await api
-        .url(`sessions/athletes/${athleteId}/records`)
+        .url(`/sessions/athletes/${athleteId}/records`)
         .get()
         .json<SessionRecordsResponse>();
     return response;

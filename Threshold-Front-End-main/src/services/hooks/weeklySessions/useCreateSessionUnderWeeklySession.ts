@@ -27,7 +27,7 @@ const createSessionUnderWeeklySession = async (
     sessionDetails: Session,
 ): Promise<CreateSessionResponse> => {
     const response = await api
-        .url(`weekly-sessions/${weeklySessionId}/sessions`)
+        .url(`/weekly-sessions/${weeklySessionId}/sessions`)
         .post(sessionDetails)
         .json<CreateSessionResponse>();
     return response;

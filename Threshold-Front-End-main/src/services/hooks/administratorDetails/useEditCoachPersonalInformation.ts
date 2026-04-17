@@ -47,7 +47,7 @@ export const editCoachPersonalInformation = async (
     });
 
     const response = await api
-        .url(`sportClubProfile/${sportId}/club-admin/${coachId}/personal-information`)
+        .url(`/sportClubProfile/${sportId}/club-admin/${coachId}/personal-information`)
         .patch(formData)
         .json<EditCoachPersonalInformation>();
 

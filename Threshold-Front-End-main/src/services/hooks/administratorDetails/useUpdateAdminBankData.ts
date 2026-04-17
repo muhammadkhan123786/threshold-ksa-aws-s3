@@ -18,7 +18,7 @@ const updateBankData = async (
     data: EditCoachBankDataRequest,
 ): Promise<EditCoachBankDataResponse> => {
     const response = await api
-        .url(`sportClubProfile/${sportId}/club-admin/${coachId}/bank`)
+        .url(`/sportClubProfile/${sportId}/club-admin/${coachId}/bank`)
         .patch(data)
         .json<EditCoachBankDataResponse>();
     return response;

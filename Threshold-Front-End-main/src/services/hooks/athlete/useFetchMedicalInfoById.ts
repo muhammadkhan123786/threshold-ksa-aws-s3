@@ -38,7 +38,7 @@ interface MedicalInfoResponse {
 
 const fetchMedicalInfoById = async (athleteId: string): Promise<MedicalInfoResponse> => {
     const response = await api
-        .url(`athletes/${athleteId}/health/medical-info`)
+        .url(`/athletes/${athleteId}/health/medical-info`)
         .get()
         .json<MedicalInfoResponse>();
     return response;

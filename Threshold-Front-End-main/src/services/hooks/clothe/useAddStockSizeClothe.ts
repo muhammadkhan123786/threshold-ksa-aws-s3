@@ -14,7 +14,7 @@ interface AddStockSizeResponse {
 }
 
 export const addStockSize = async (data: AddStockSizeRequest): Promise<AddStockSizeResponse> => {
-    const response = await api.url('stock/sizes').post(data).json<AddStockSizeResponse>();
+    const response = await api.url('/stock/sizes').post(data).json<AddStockSizeResponse>();
     return response;
 };
 

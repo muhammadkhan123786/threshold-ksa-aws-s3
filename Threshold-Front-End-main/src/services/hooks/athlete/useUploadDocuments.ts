@@ -24,7 +24,7 @@ const uploadSingleDocument = async ({
 
     try {
         return await api
-            .url(`athletes/${athleteId}/documents/upload/${type}`)
+            .url(`/athletes/${athleteId}/documents/upload/${type}`)
             .post(formData)
             .json<DocumentUploadResponse>();
     } catch (error: any) {

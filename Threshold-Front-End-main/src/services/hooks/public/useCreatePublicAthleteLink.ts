@@ -15,7 +15,7 @@ const createPublicAthleteLink = async (
     request: CreatePublicAthleteLinkRequest,
 ): Promise<CreatePublicAthleteLinkResponse> => {
     const response = await api
-        .url('links/create-public-athlete-link')
+        .url('/links/create-public-athlete-link')
         .post(request)
         .json<CreatePublicAthleteLinkResponse>();
     return response;

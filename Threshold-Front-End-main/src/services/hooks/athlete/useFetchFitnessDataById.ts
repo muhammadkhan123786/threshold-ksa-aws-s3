@@ -52,7 +52,7 @@ const fetchFitnessDataById = async (
     }
 
     const response = await api
-        .url(`athleteBatteries/${athleteId}/fitness-data`)
+        .url(`/athleteBatteries/${athleteId}/fitness-data`)
         .query(queryParams)
         .get()
         .json<FitnessDataResponse>();

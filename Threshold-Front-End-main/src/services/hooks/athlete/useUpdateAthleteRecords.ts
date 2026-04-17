@@ -18,7 +18,7 @@ const addAthleteRecords = async (
     id: string | undefined,
     data: AthleteRecordUpdateData,
 ): Promise<AthleteRecordUpdateResponse> => {
-    return api.url(`athletes/${id}/records`).post(data).json<AthleteRecordUpdateResponse>();
+    return api.url(`/athletes/${id}/records`).post(data).json<AthleteRecordUpdateResponse>();
 };
 
 const updateAthleteRecords = async (
@@ -27,7 +27,7 @@ const updateAthleteRecords = async (
     data: AthleteRecordUpdateData,
 ): Promise<AthleteRecordUpdateResponse> => {
     return api
-        .url(`athletes/${id}/records/${recordid}`)
+        .url(`/athletes/${id}/records/${recordid}`)
         .patch(data)
         .json<AthleteRecordUpdateResponse>();
 };

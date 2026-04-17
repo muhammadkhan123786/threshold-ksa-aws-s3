@@ -31,7 +31,7 @@ const createWeeklySession = async (
     weeklySession: WeeklySession,
 ): Promise<CreateWeeklySessionResponse> => {
     const response = await api
-        .url(`weekly-sessions?team_id=${teamId}`)
+        .url(`/weekly-sessions?team_id=${teamId}`)
         .post(weeklySession)
         .json<CreateWeeklySessionResponse>();
     return response;

@@ -22,7 +22,7 @@ interface AddSportClubProfileResponse {
 const addSportClubProfile = async (
     data: AddSportClubProfilePayload,
 ): Promise<AddSportClubProfileResponse> => {
-    return await api.url('sport-club-profiles').post(data).json<AddSportClubProfileResponse>();
+    return await api.url('/sport-club-profiles').post(data).json<AddSportClubProfileResponse>();
 };
 
 export const useAddSportClubProfile = (

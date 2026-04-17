@@ -3,7 +3,7 @@ import api from '../../clients/wretchClient';
 
 export const fetchStockSummarized = async (sportId: string): Promise<any> => {
     if (!sportId) throw new Error('Sport ID is required');
-    const response = await api.url(`stock/summarized?sportId=${sportId}`).get().json<any>();
+    const response = await api.url(`/stock/summarized?sportId=${sportId}`).get().json<any>();
     return response;
 };
 

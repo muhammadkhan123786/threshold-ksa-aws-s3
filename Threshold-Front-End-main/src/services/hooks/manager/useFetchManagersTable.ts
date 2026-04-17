@@ -13,7 +13,7 @@ export const fetchManagersTable = async ({
     limit = 10,
 }: ManagersTableRequest): Promise<any> => {
     const response = await api
-        .url(`club/${clubId}/manager?page=${page}&limit=${limit}&sortOrder=ASC`)
+        .url(`/club/${clubId}/manager?page=${page}&limit=${limit}&sortOrder=ASC`)
         .get()
         .json<any>();
 

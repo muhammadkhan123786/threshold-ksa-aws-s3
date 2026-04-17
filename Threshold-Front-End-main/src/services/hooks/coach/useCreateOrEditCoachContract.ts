@@ -39,7 +39,7 @@ const createCoachContract = async (
 ): Promise<EditOrCreateCoachContact> => {
     const formData = createFormData(data);
     return api
-        .url(`sportClubProfile/${sportClubProfileId}/club-coaches/${coachId}/contract`)
+        .url(`/sportClubProfile/${sportClubProfileId}/club-coaches/${coachId}/contract`)
         .post(formData)
         .json<EditOrCreateCoachContact>();
 };
@@ -51,7 +51,7 @@ const editCoachContract = async (
 ): Promise<EditOrCreateCoachContact> => {
     const formData = createFormData(data);
     return api
-        .url(`sportClubProfile/${sportClubProfileId}/club-coaches/${coachId}/contract`)
+        .url(`/sportClubProfile/${sportClubProfileId}/club-coaches/${coachId}/contract`)
         .patch(formData)
         .json<EditOrCreateCoachContact>();
 };

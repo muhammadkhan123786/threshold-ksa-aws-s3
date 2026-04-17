@@ -10,7 +10,7 @@ interface GetPublicAthleteLinkResponse {
 }
 
 const getPublicAthleteLink = async (): Promise<GetPublicAthleteLinkResponse> => {
-    const response = await api.url('links').get().json<GetPublicAthleteLinkResponse>();
+    const response = await api.url('/links').get().json<GetPublicAthleteLinkResponse>();
     return response;
 };
 
