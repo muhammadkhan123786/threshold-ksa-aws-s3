@@ -1,0 +1,1 @@
+export { TemplatesTableAdministrator } from './TemplatesTableAdministrator';

@@ -1,0 +1,1 @@
+export { TemplatesTablePlayerCompositionRecords } from './TemplatesTablePlayerCompositionRecords';

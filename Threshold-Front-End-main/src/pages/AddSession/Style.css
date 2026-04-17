@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.hiddenYear .react-datepicker__month-container {
+  display: none !important;
+}
+.hiddenYear .react-datepicker__navigation--previous,
+.hiddenYear .react-datepicker__navigation--next {
+  display: none !important;
+}
+.react-datepicker-wrapper {
+  width: 100%;
+}
+input {
+  width: 100%;
+}
+.hasuuB {
+  margin: 40px;
+}

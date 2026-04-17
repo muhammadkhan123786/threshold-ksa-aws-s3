@@ -1,0 +1,1 @@
+export { EditPersonalInformation } from './EditPersonalInformation';

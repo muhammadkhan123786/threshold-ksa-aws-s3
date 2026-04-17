@@ -1,0 +1,1 @@
+export { GoalStatusBoard } from './GoalStatusBoard';

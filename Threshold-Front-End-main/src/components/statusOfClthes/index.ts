@@ -1,0 +1,1 @@
+export { StatusOfClothes } from './StatusOfClothes';

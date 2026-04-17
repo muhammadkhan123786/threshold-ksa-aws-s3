@@ -1,0 +1,1 @@
+export { usePageStructure } from './usePageStructure';

@@ -1,0 +1,1 @@
+export { AddNewMedicalFile } from './AddNewMedicalFile';

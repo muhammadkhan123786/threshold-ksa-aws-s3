@@ -1,0 +1,63 @@
+import { UserRole } from 'libs/enums';
+
+export enum RouteNames {
+    HOME = 'home',
+    SIGNIN = 'signin',
+    FORGET_PASSWORD = 'forget_password',
+    REST_PASSWORD = 'reset_password',
+    SIGNUP = 'signup',
+    ATHLETE = 'athlete',
+    ADD_ATHLETE = 'addAthlete',
+    TEAM = 'team',
+    ADD_TEAM = 'addTeam',
+    ADD_COACH = 'addCoach',
+    COACH = 'coach',
+    SESSION = 'session',
+    PROFILE = 'profile',
+    FEEDBACKS = 'feedbacks',
+    APPROVAL_USERS = 'approval-users',
+    // SCHEDULE = 'schedule',
+    SESSION_UPDATE = 'session_update',
+    ATHLETE_PUBLIC = 'athlete_public',
+    ATHLETE_PUBLIC_WITH_CLUB = 'athlete_public_with_club',
+    NOTIFICATION = 'notification',
+    CONFIRM_SESSION = 'confirm_session',
+    ADMIN_MANAGER = 'admin_manager',
+    BRANCH = 'branch',
+    ADD_BRANCH = 'addBranch',
+    TEAM_SESSION = 'team-session',
+    ADD_SESSTION = 'add-sesstion-page',
+    SESSION_TEMPLATES = 'add-sesstion-page/templates',
+    TEMPLATE_SETTINGS = 'add-sesstion-page/templates/template-settings',
+    CLUB_CLOTHES = 'club-clothes',
+    STOCK_CLOTHES = 'stock-clothes',
+    MANAGER = 'manager',
+    CLUB_PROFILE = 'clubProfile',
+    CLUB_COACH = 'club-coach',
+    CLUB_TEAM = 'club-team',
+    CLUB_ATHLETE = 'club-athlete',
+    PLAYERS = 'players',
+    PLAYERS_DETAILS = 'players-details',
+    COACHES = 'coaches',
+    TEAMS = 'teams',
+    ADMINISTRATOR = 'administrator',
+    TEAM_DETAILS = 'team-details',
+    INVITED_PLAYERS = 'invited-player',
+    COACH_DETAILS = 'coach-details',
+    ADMINISTRATOR_DETAILS = 'administrator-details',
+    SESSION_DETAILS = 'session-details',
+    CONTACT_US = 'contact-us',
+    OVERVIEW = 'overview',
+    TASKS = 'tasks',
+    SCHEDULE = 'schedule',
+    CALENDAR = 'calendar',
+    SPORT_OVERVIEW = 'sport-overview',
+    MANAGER_DETAILS = 'manager-details',
+}
+
+export interface RouteConfig {
+    Page: React.ComponentType;
+    Layout: React.ComponentType<any>;
+    isAuthPage: boolean;
+    allowedRoles: UserRole[];
+}

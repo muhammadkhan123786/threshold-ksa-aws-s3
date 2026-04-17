@@ -1,0 +1,1 @@
+export { EditClothes } from './EditClothes';

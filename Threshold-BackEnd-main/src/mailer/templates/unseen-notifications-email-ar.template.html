@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>إشعارات غير مقروءة</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            .container {
+                width: 100%;
+                max-width: 600px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #ffffff;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+            .header {
+                text-align: center;
+                padding: 20px 0;
+                background-color: #c0d330;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                color: #ffffff;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .content {
+                padding: 20px;
+                text-align: center;
+                direction: rtl;
+            }
+            .content p {
+                font-size: 16px;
+                color: #333333;
+                margin: 0 0 20px;
+                direction: rtl;
+            }
+            .content a {
+                display: inline-block;
+                padding: 12px 25px;
+                margin-top: 20px;
+                background-color: #c0d330;
+                color: #ffffff;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 16px;
+                text-transform: uppercase;
+                direction: rtl;
+            }
+            .footer {
+                text-align: center;
+                padding: 20px;
+                font-size: 14px;
+                color: #ffffff;
+                background-color: #c0d330;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                direction: rtl;
+            }
+            .footer a {
+                color: #ffffff;
+                text-decoration: none;
+                direction: rtl;
+            }
+            .capitalize {
+                text-transform: capitalize; /* Capitalizes first letter of each word */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">Threshold</div>
+            <div class="content">
+                <p>
+                    مرحبًا
+                    <strong class="capitalize" style="color: #c0d330"
+                        >{{userName}}</strong
+                    >،
+                </p>
+                <p>لديك الإشعارات التالية غير مقروءة:</p>
+                <p>{{notificationMessages}}</p>
+                <p>
+                    يمكنك الآن
+                    <a href="{{domain}}">تسجيل الدخول إلى حسابك</a> وبدء استخدام
+                    خدماتنا.
+                </p>
+                <p>شكرًا لانضمامك إلينا!</p>
+            </div>
+            <div class="footer">
+                <p>
+                    لأي استفسارات، يرجى الاتصال بفريق الدعم لدينا على
+                    <a href="mailto:info@thresholdsa.net"
+                        >info@thresholdsa.net</a
+                    >.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

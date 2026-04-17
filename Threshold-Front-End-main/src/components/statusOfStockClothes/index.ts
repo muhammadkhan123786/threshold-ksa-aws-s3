@@ -1,0 +1,1 @@
+export { StatusOfStockClothes } from './StatusOfStockClothes';

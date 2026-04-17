@@ -1,0 +1,1 @@
+export { TemplatesTableCoaches } from './TemplatesTableCoaches';

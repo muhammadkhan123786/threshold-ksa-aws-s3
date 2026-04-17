@@ -1,0 +1,1 @@
+export { EditContract } from './EditContract';

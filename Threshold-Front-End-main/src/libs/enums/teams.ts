@@ -1,0 +1,18 @@
+export enum Category {
+    MEN = 'MEN',
+    WOMEN = 'WOMEN',
+    YOUNG_MEN = 'YOUNG_MEN',
+    YOUNG_WOMEN = 'YOUNG_WOMEN',
+    MALE_CHILDREN = 'MALE_CHILDREN',
+    FEMALE_CHILDREN = 'FEMALE_CHILDREN',
+    CHILDREN = 'CHILDREN',
+}
+export enum SkillType {
+    KIDS = 'KIDS',
+    JUNIORS = 'JUNIORS',
+    YOUTH = 'YOUTH',
+    FIRST_TEAM = 'FIRST_TEAM',
+    BEGINNER = 'BEGINNER',
+    INTERMEDIATE = 'INTERMEDIATE',
+    EXPERT = 'EXPERT',
+}

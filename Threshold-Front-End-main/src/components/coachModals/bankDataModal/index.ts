@@ -1,0 +1,1 @@
+export { EditBankData } from './EditBankData';

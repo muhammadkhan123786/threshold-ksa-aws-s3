@@ -1,0 +1,13 @@
+export { useFetchManagerDetailsById } from './useFetchManagerDetailsById';
+export { useFetchPersonalInfoById } from './useFetchPersonalInfoById';
+export { useFetchContactInfoById } from './useFetchContactInfoById';
+export { useFetchMedicalInfoById } from './useFetchMedicalInfoById';
+export { useFetchDocumentsById } from './useFetchDocumentsById';
+export { useFetchManagerContractDetails } from './useFetchManagerContractDetails';
+export { useUpdateBankData } from './useEditBankData';
+export { useUpdateContact } from './useEditContact';
+export { useUpdatePersonalInformation } from './useUpdatePersonalInformation';
+export { useAddDocument } from './useAddDocuments';
+export { useCreateManagerContract } from './useCreateOrEditContract';
+export { useEditManagerContract } from './useCreateOrEditContract';
+export { useGetBankData } from './useEditBankData';

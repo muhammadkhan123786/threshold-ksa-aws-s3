@@ -1,0 +1,1 @@
+export { Clothes } from './Clothes';

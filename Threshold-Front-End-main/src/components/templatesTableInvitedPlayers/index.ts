@@ -1,0 +1,1 @@
+export { TemplatesTableInvitedPlayers } from './TemplatesTableInvitedPlayers';

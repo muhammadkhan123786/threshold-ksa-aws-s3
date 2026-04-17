@@ -1,0 +1,1 @@
+export { TemplatesTableManagers } from './TemplatesTableManagers';

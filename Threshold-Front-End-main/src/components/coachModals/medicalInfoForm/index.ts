@@ -1,0 +1,1 @@
+export { MedicalFilesModal } from './EditMedicalInfoForm';

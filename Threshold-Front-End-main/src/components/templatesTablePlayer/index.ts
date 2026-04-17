@@ -1,0 +1,1 @@
+export { TemplatesTablePlayer } from './TemplatesTablePlayer';

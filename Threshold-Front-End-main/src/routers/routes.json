@@ -1,0 +1,211 @@
+[
+    {
+        "name": "home",
+        "path": "/"
+    },
+    {
+        "name": "signin",
+        "path": "/auth/sign_in"
+    },
+    {
+        "name": "athlete_public",
+        "path": "/public/athlete/:id"
+    },
+    {
+        "name": "athlete_public_with_club",
+        "path": "/public/athlete/:id/:extra"
+    },
+    {
+        "name": "forget_password",
+        "path": "/auth/forget_password"
+    },
+    {
+        "name": "reset_password",
+        "path": "/auth/reset_password/:token"
+    },
+    {
+        "name": "signup",
+        "path": "/auth/sign_up"
+    },
+    {
+        "name": "athlete",
+        "path": "/athlete/:id"
+    },
+    {
+        "name": "addAthlete",
+        "path": "/add_athlete"
+    },
+    {
+        "name": "team",
+        "path": "/team/:id"
+    },
+    {
+        "name": "addTeam",
+        "path": "/add_team"
+    },
+    {
+        "name": "addCoach",
+        "path": "/add_coach"
+    },
+    {
+        "name": "coach",
+        "path": "/coach/:id"
+    },
+    {
+        "name": "session",
+        "path": "/session/:id"
+    },
+    {
+        "name": "team-session",
+        "path": "/team-session/:id"
+    },
+    {
+        "name": "session_update",
+        "path": "/session/:id/update"
+    },
+    {
+        "name": "profile",
+        "path": "/profile/:id"
+    },
+    {
+        "name": "feedbacks",
+        "path": "/feedbacks"
+    },
+    {
+        "name": "approval-users",
+        "path": "/approval-users"
+    },
+    {
+        "name": "public-athlete-links",
+        "path": "/public_athlete_links"
+    },
+    {
+        "name": "notification",
+        "path": "/notification"
+    },
+    {
+        "name": "confirm_session",
+        "path": "/confirm_session/:id"
+    },
+    {
+        "name": "admin_manager",
+        "path": "/admin_manager"
+    },
+    {
+        "name": "branch",
+        "path": "/branch/:id"
+    },
+    {
+        "name": "addBranch",
+        "path": "/addBranch"
+    },
+    {
+        "name": "session_creation",
+        "path": "/session_creation"
+    },
+    {
+        "name": "add-sesstion-page",
+        "path": "/add-sesstion-page"
+    },
+    {
+        "name": "add-sesstion-page/templates",
+        "path": "/add-sesstion-page/templates"
+    },
+    {
+        "name": "add-sesstion-page/templates/template-settings",
+        "path": "/add-sesstion-page/templates/template-settings"
+    },
+    { "name": "club-clothes", "path": "/club-clothes/:sportId" },
+    {
+        "name": "stock-clothes",
+        "path": "/club-clothes/:sportId/stock-clothes"
+    },
+    {
+        "name": "players-details",
+        "path": "/players/:sportId/:id/players-details"
+    },
+    {
+        "name": "manager",
+        "path": "club-profile/:academyId/manager"
+    },
+    {
+        "name": "clubProfile",
+        "path": "/club-profile"
+    },
+    {
+        "name": "club-coach",
+        "path": "/coach-list/:sportId"
+    },
+    {
+        "name": "club-team",
+        "path": "/team-list/:sportId"
+    },
+    {
+        "name": "teams",
+        "path": "/teams/:sportId"
+    },
+    {
+        "name": "club-athlete",
+        "path": "/athlete-list/:sportId"
+    },
+    {
+        "name": "players",
+        "path": "/players/:sportId"
+    },
+    {
+        "name": "administrator",
+        "path": "/administrator/:sportId"
+    },
+    {
+        "name": "coaches",
+        "path": "/coaches/:sportId"
+    },
+    {
+        "name": "team-details",
+        "path": "/teams/:sportId/:id/team-details"
+    },
+    {
+        "name": "invited-player",
+        "path": "session/invited-player"
+    },
+    {
+        "name": "coach-details",
+        "path": "/coaches/:sportId/:id/coach-details"
+    },
+    {
+        "name": "administrator-details",
+        "path": "/administrator/:sportId/:id/administrator-details"
+    },
+    {
+        "name": "manager-details",
+        "path": "/manager/:academyId/manager-details/:id"
+    },
+    {
+        "name": "session-details",
+        "path": "/session/:sessionId"
+    },
+    {
+        "name": "contact-us",
+        "path": "/contact-us"
+    },
+    {
+        "name": "overview",
+        "path": "/:sportId/overview"
+    },
+    {
+        "name": "sport-overview",
+        "path": "/sport-overview"
+    },
+    {
+        "name": "tasks",
+        "path": "/tasks"
+    },
+    {
+        "name": "schedule",
+        "path": "/schedule"
+    },
+    {
+        "name": "calendar",
+        "path": "/calendar"
+    }
+]

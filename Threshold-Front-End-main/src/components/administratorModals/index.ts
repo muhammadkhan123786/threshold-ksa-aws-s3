@@ -1,0 +1,1 @@
+export { AdministratorModal } from './AdministratorModal';

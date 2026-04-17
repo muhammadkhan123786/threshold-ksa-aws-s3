@@ -1,0 +1,282 @@
+import { media } from 'libs/Theme/breakpoints';
+import styled from 'styled-components';
+
+export const ResponsiveTableContainer = styled.div`
+    width: 100%;
+    overflow-x: none;
+    -webkit-overflow-scrolling: none;
+    @media (max-width: 1200px) {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    & > * {
+        min-width: 100%;
+    }
+
+    & > * {
+        min-width: max(100%, 900px);
+    }
+`;
+
+export const TableWrapper = styled.div`
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+
+    @media (max-width: 950px) {
+        padding: 16px 0;
+    }
+`;
+
+export const TableRow = styled.tr`
+    &:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    &:hover {
+        background-color: #c0d33014;
+    }
+`;
+
+export const TableHeader = styled.th`
+    padding: 12px 16px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    background-color: #c0d33014;
+    opacity: 50%;
+    text-align: justify;
+`;
+
+export const TableCell = styled.td`
+    white-space: nowrap;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+    font-size: 12px;
+    font-weight: 400;
+`;
+export const PersonInfoElement = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 10px;
+`;
+
+export const PersonImage = styled.img`
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+`;
+
+export const PersonTextContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+export const PersonName = styled.p`
+    font-weight: bold;
+    margin: 0;
+`;
+
+export const PersonAge = styled.p`
+    font-size: 14px;
+    color: #666;
+`;
+export const StatusBar = styled.div`
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.5;
+`;
+
+export const Button = styled.button`
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+`;
+export const ButtonsWrapper = styled.button`
+    min-width: 132px;
+    margin: 10px 10px;
+    width: auto;
+    background-color: #c0d330;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+
+    &:hover {
+        background-color: #c0d330;
+    }
+
+    &:disabled {
+        background-color: #e0e0e0;
+        cursor: not-allowed;
+    }
+`;
+export const NotDeliveredPara = styled.p`
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+export const UsersNumberTable = styled.p`
+    color: #2020204d;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+`;
+export const ParaMissingClothes = styled.p`
+    font-size: 14px;
+    color: #000000;
+    margin: 4px 0;
+    line-height: 1.5;
+`;
+export const ClothesMissingWrapper = styled.div`
+    display: flex;
+`;
+export const SpanPostion = styled.span`
+    color: #25badc;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: #25badc0a;
+    font-weight: 600;
+`;
+export const SpanContracter = styled.span`
+    color: #039855;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 12px;
+    font-weight: 600;
+`;
+export const ButtonIcon = styled.img`
+    height: 16px;
+    width: 16px;
+    margin: 5px;
+`;
+
+export const StyledSpan = styled.span<{ teamCategory: string }>`
+    ${({ teamCategory }) => {
+        if (/^male/i.test(teamCategory)) {
+            return `
+                background-color: #67C6F114;
+                color: #67C6F1;
+            `;
+        }
+        if (/^female/i.test(teamCategory)) {
+            return `
+                background-color: #F75B9814;
+                color: #F75B98;
+            `;
+        }
+        return `
+            background-color: transparent;
+            color: inherit;
+        `;
+    }}
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+`;
+
+export const DateSpan = styled.span`
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(32, 36, 3, 0.85);
+    line-height: 18px;
+`;
+
+export const TimeSpan = styled.span`
+    font-size: 12px;
+    color: rgba(32, 36, 3, 0.3);
+    font-weight: 400;
+    border-radius: 20px;
+`;
+
+export const DateWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 0px 12px;
+    gap: 8px;
+`;
+
+export const SessionsSpan = styled.span`
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: rgba(220, 128, 37, 1);
+    font-weight: 500;
+    line-height: 18px;
+    padding: 3px 12px;
+    background-color: rgba(220, 129, 37, 0.04);
+    border-radius: 20px;
+`;
+
+export const StatusSpan = styled.span<{ status: string }>`
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    color: ${(props) =>
+        props.status === 'available' ? 'rgba(3, 152, 85, 1)' : 'rgba(235, 83, 83, 1)'};
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: ${(props) =>
+            props.status === 'available' ? 'rgba(3, 152, 85, 1)' : 'rgba(235, 83, 83, 1)'};
+    }
+`;
+
+export const SportTypeSpan = styled.span`
+    display: inline-block;
+    text-align: center;
+    color: rgba(192, 211, 48, 1);
+    font-weight: 500;
+    line-height: 18px;
+    padding: 3px 12px;
+    background-color: rgba(192, 211, 48, 0.08);
+    border-radius: 8px;
+`;
+
+export const ContractWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+`;
+
+export const StatusDateSpan = styled.p`
+    color: rgba(32, 36, 3, 0.6);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+`;

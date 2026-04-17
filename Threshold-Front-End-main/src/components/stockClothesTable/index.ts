@@ -1,0 +1,1 @@
+export { StockClothesTable } from './StockClothesTable';

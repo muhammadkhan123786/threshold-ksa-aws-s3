@@ -1,0 +1,1 @@
+export { InputPdfController } from './InputPdfController';

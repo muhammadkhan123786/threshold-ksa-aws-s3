@@ -1,0 +1,1 @@
+export { AthleteTable } from './AthleteTable';

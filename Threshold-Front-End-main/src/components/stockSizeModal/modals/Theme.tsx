@@ -1,0 +1,46 @@
+import Modal from 'react-modal';
+import styled from 'styled-components';
+
+export const InputsWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    transition: all 0.5s ease;
+    margin-top: 20px;
+`;
+export const Input = styled.input`
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: white;
+
+    &::placeholder {
+        color: #bbb;
+    }
+`;
+export const Body = styled.form.attrs({ className: 'flex flex-col' })`
+    padding: 10px 30px;
+    background-color: white;
+    width: 100%;
+    margin: auto;
+`;
+export const LineHR = styled.hr`
+    color: black;
+    font-size: 2px;
+    margin: 20px 0px;
+`;
+export const InputMultiElemintsWrapperRight = styled.div`
+    display: flex;
+    align-items: end;
+    justify-items: end;
+    justify-content: end;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    transition: all 0.3s ease;
+`;

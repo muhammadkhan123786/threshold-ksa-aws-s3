@@ -1,0 +1,1 @@
+export { EditCoachContract } from './EditCoachContract';

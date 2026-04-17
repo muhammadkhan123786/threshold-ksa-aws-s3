@@ -1,0 +1,1 @@
+export { SessionTemplatesTable } from './SessionTemplatesTable';

@@ -1,0 +1,27 @@
+export type SportType = string;
+
+export const sportMapping: Record<SportType, string> = {
+    football: '/assets/icons/sports/football-icon.svg',
+    swimming: '/assets/icons/sports/swimming-icon.svg',
+    athletics: '/assets/icons/sports/athletics-icon.svg',
+    handball: '/assets/icons/sports/handball-icon.svg',
+    basketball: '/assets/icons/sports/basketball-icon.svg',
+    netball: '/assets/icons/sports/netball-icon.svg',
+    volleyball: '/assets/icons/sports/volleyball-icon.svg',
+    tennis: '/assets/icons/sports/tennis-icon.svg',
+    gymnastics: '/assets/icons/sports/gymnastics-icon.svg',
+    cricket: '/assets/icons/sports/cricket-icon.svg',
+    karate: '/assets/icons/sports/karate-icon.svg',
+    judo: '/assets/icons/sports/judo-icon.svg',
+    boxing: '/assets/icons/sports/boxing-icon.svg',
+    muay: '/assets/icons/sports/muay-icon.svg',
+    taekwondo: '/assets/icons/sports/taekwondo-icon.svg',
+    padel: '/assets/icons/sports/padel-icon.svg',
+    beach_volleyball: '/assets/icons/sports/beach_volleyball-icon.svg',
+    ping_pong: '/assets/icons/sports/ping_pong-icon.svg',
+    fencing: '/assets/icons/sports/fencing-icon.svg',
+    water_polo: '/assets/icons/sports/water_polo-icon.svg',
+    futsal: '/assets/icons/sports/futsal-icon.svg',
+    equestrian: '/assets/icons/sports/equestrian-icon.svg',
+    archery: '/assets/icons/sports/archery-icon.svg',
+};

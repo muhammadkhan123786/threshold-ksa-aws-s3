@@ -1,0 +1,1 @@
+export { TemplatesTableClothes } from './TemplatesTableClothes';

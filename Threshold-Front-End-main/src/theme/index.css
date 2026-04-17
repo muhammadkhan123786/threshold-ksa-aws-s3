@@ -1,0 +1,262 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: #f7f7f7;
+}
+
+.ReactModal__Overlay,
+.ReactModal__Overlay--after-open {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 10000102;
+  background-color: #1a192b50;
+}
+
+.react-flow__node-custom {
+  font-size: 10px;
+  width: 180px;
+  background: #f5f5f6;
+  color: #222;
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 15%),
+    0 2px 4px -1px rgb(0 0 0 / 8%);
+  border-radius: 2px;
+}
+
+.react-flow__node-custom .react-flow__handle {
+  top: 24px;
+  right: -15px;
+  width: 6px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #778899;
+}
+
+.react-flow__node.circle {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.react-flow__node.annotation {
+  border-radius: 0;
+  text-align: start;
+  background: white;
+  border: none;
+  line-height: 1.4;
+  width: 225px;
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 15%),
+    0 2px 4px -1px rgb(0 0 0 / 8%);
+}
+
+.react-flow__node.annotation .react-flow__handle {
+  display: none;
+}
+
+.custom-node__header {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.custom-node__body {
+  padding: 10px;
+}
+
+.custom-node__select {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.custom-node__select select {
+  width: 100%;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.dndflow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dndflow aside {
+  border-right: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fcfcfc;
+}
+
+.dndflow aside .description {
+  margin-bottom: 10px;
+}
+
+.dndflow .dndnode {
+  height: 20px;
+  padding: 4px;
+  border: 1px solid #1a192b;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.dndflow .dndnode.input {
+  border-color: #0041d0;
+}
+
+.dndflow .dndnode.output {
+  border-color: #ff0072;
+}
+
+.dndflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dndflow .selectall {
+  margin-top: 10px;
+}
+
+.react-datepicker-popper {
+  z-index: 3;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow {
+    flex-direction: row;
+  }
+
+  .dndflow aside {
+    width: 20%;
+    max-width: 250px;
+  }
+}
+
+.react-flow__panel.right {
+  display: none !important;
+}
+
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: #c0d330 #f3f3f3;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f3f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c0d330;
+  border-radius: 10px;
+  border: 2px solid #f3f3f3;
+}
+
+.react-resizable {
+  position: relative;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+.react-resizable-handle-sw {
+  bottom: 0;
+  left: 0;
+  cursor: sw-resize;
+}
+.react-resizable-handle-se {
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+.react-tabs__tab {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.react-tabs__tab--selected {
+  color: #c0d330;
+  border-bottom: 2px solid #c0d330 !important;
+  background: transparent;
+  box-shadow: none;
+}
+
+.react-tabs__tab:focus {
+  outline: none;
+}
+
+.react-tabs__tab:hover:not(.react-tabs__tab--selected) {
+  color: #000;
+}
+
+.react-tabs__tab-panel {
+  padding: 20px;
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+.css-13cymwt-control {
+  border-radius: 8px !important;
+}
+.css-b62m3t-container {
+  border-radius: 8px !important;
+}
